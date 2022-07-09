@@ -1,7 +1,7 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/browser-apis/
- */
-
-// You can delete this file if you're not using it
+import React from "react";
+// import Context from "./src/context/SearchContext";
+import { SearchProvider } from "./src/context/SearchContext";
+// Wraps every page in a component
+export const wrapPageElement = ({ element, props }) => {
+  return <SearchProvider {...props}>{element}</SearchProvider>;
+};

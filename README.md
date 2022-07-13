@@ -1,7 +1,8 @@
 # Demo Using context for url-to-state-routing
 
-This example walks through linking between pages in a Gatsby site based on the url and query params.
-Sync the query with the context state. treating the URL as the source of truth.
+This example walks through synchronizing component state and other with query parameters.
+linking between pages in a Gatsby site based on the url and query params.
+Treating the URL as the source of truth.
 
 ## Install example
 

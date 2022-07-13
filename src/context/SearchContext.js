@@ -38,7 +38,6 @@ export function SearchProvider({ children, location }) {
     if (newPath && newPath !== path.slice(1)) path = newPath;
 
     const currentParam = parse(location.search, { parseBooleans: true });
-    // console.log(currentParam, "currnet param");
 
     newQuery = `?${stringify(
       {
@@ -47,7 +46,6 @@ export function SearchProvider({ children, location }) {
       },
       { arrayFormat: "comma" }
     )}`;
-    console.log(`${path}${newQuery}`);
     navigate(`${path}${newQuery}`);
   };
 
